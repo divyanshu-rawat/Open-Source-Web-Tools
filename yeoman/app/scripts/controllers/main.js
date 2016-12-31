@@ -8,10 +8,13 @@
  * Controller of the yeomanApp
  */
 angular.module('yeomanApp')
+
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
+    console.log('I am the Main Controller !!!');
   });
