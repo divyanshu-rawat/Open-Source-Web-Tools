@@ -17,6 +17,9 @@ angular.module('yeomanApp')
       'Karma'
     ];
 
+
+    // $scope.welcome = "divyanshu";
+
   	$scope.callApi = function () {
 		   
 		   var url = 'http://localhost:3000/welcome';
@@ -25,8 +28,10 @@ angular.module('yeomanApp')
 
 		   .then(function (response){
 
-		   		console.log(response);
-			
+		   		console.log(JSON.stringify(response.data));
+
+		   		$scope.welcome = response.data;
+
 			},
 
      		function (error){
@@ -35,5 +40,7 @@ angular.module('yeomanApp')
      		});
 }
 
+
+		    $scope.callApi();
 
   }]);

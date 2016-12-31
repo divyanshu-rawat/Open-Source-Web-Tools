@@ -16,7 +16,7 @@ welcomeRouter.route('/')
   
   // res.render('index', { title: 'Express' });
 
-  	res.json('Welcome to Module 2 Homework!');
+  	res.send('Welcome to Module 2 Homework!');
   
 
 });
