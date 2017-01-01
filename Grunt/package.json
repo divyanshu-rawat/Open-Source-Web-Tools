@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "grunt-cli": "^1.2.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify": "^2.0.0"
   }
 }
