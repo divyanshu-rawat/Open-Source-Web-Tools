@@ -19,32 +19,29 @@ Yeoman [http://yeoman.io] utilizes a set of tools for automating development wor
 
 Yeoman employs a modular architecture with customizable scale to help you quickly and easily create new modules, packages, or 
 
-projects; bootstrap new services; and promote new projects by providing sample apps to other developers. In addition, Yeoman 
+projects; bootstrap new services; and promote new projects by providing sample apps to other developers.
 
-suggests best practices, and offers tools such as style guides that help you streamline the maintenance of your new and 
+In addition, Yeoman suggests best practices, and offers tools such as style guides that help you streamline the maintenance of your new and existing web app projects.
 
-existing web app projects.
+Specifically, Yeoman creates the basic folders, files, and configurations for your app.
 
-Specifically, Yeoman creates the basic folders, files, and configurations for your app. During development, Yeoman's tools 
+During development, Yeoman's tools create the development environment, automatically reload the browser when changes are saved, handle notification for apps and ensure packages are up-to-date.
 
-create the development environment, automatically reload the browser when changes are saved, handle notification for apps, 
-
-and ensure packages are up-to-date. When it comes time to deploy your app, the tools will minify all the code, optimize 
+When it comes time to deploy your app, the tools will minify all the code, optimize 
 
 images, compile files, and package the app for distribution.
 
+What makes Yeoman unique is its generator plugin.
 
-What makes Yeoman unique is its generator plugin. You run the generator using the yo command to build the structure for 
+You run the generator using the yo command to build the structure for parts of an application or complete projects.
 
-parts of an application or complete projects. Since Yeoman is supported by an active development community, there are many 
-
-publicly available generators, or you can create your own for a specific workflow.
+Since Yeoman is supported by an active development community, there are many publicly available generators, or you can create your own for a specific workflow.
 
 The Yeoman workflow is promoted via the generators and is a robust client-side stack, consisting of tools and frameworks 
 
-that help developers quickly build web apps. Even though the Yeoman workflow tools have been developed and are maintained 
+that help developers quickly build web apps.
 
-separately, they are compatible with each other.
+Even though the Yeoman workflow tools have been developed and are maintained separately, they are compatible with each other.
 
 The Yeoman Workflow Tools
 
