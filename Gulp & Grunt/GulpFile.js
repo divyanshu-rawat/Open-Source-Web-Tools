@@ -1,7 +1,8 @@
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
+var jshint = require('gulp-jshint');
 
-gulp.task('default', ['uglify']);
+gulp.task('default', ['uglify','lint']);
 
 // Create an uglify task by calling the task function on the gulp object. Pass a string 'uglify' as the first parameter.
 
@@ -16,6 +17,18 @@ gulp.task('default', ['uglify']);
 
     });
 
+  gulp.task('lint', function() {
+
+  		gulp.src('lintTest.js')
+
+            .pipe(jshint())
+
+            .pipe(jshint.reporter('default'));
+
+
+
+
+});
 
 
 
