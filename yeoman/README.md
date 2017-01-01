@@ -27,11 +27,7 @@ Specifically, Yeoman creates the basic folders, files, and configurations for yo
 
 During development, Yeoman's tools create the development environment, automatically reload the browser when changes are saved, handle notification for apps and ensure packages are up-to-date.
 
-When it comes time to deploy your app, the tools will minify all the code, optimize 
-
-images, compile files, and package the app for distribution.
-
-What makes Yeoman unique is its generator plugin.
+When it comes time to deploy your app, the tools will minify all the code, optimize images, compile files, and package the app for distribution.What makes Yeoman unique is its generator plugin.
 
 You run the generator using the yo command to build the structure for parts of an application or complete projects.
 
@@ -59,9 +55,13 @@ Then install the needed generator using this command:
 
 `npm install -g generator-angular`
 
-Note: New Node and npm users might run into permissions issues. These issues appear in the form of EACCESS errors during installation. Refer to the npm guide to fix permissions if this happens to you.
+Note: New Node and npm users might run into permissions issues.
 
-yo is also a fully interactive tool. Simply typing yo in a terminal will display a list of options to manage the generators. These options include run, update, install, help, and other utilities; here are a few commands:
+These issues appear in the form of EACCESS errors during installation. Refer to the npm guide to fix permissions if this happens to you.
+
+yo is also a fully interactive tool. Simply typing yo in a terminal will display a list of options to manage the generators.
+
+These options include run, update, install, help, and other utilities; here are a few commands:
 
 yo --help Access the full help screen
 
