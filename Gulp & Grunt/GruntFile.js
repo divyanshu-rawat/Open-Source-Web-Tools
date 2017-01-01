@@ -9,13 +9,24 @@ module.exports = function(grunt) {
                 src: 'lintTest.js',
                 dest: 'dist-grunt/lintTest.min.js'
             }
+        },
+
+         
+         jshint: {
+         files: ['Gruntfile.js', 'src/**/*.js'],
+         options: {
+         globals: {
+          jQuery: true
         }
+      }
+    }
   
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['uglify','jshint']);
 
 };
 
