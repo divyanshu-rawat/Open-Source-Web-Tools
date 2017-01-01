@@ -43,3 +43,26 @@ Now we can take our Less files and convert them to CSS with a simple command, wh
 And that's it!
 
 The real magic in using Compilers is using task runners like Grunt and Gulp to tie everything together in one big automated process or build script. 
+
+To Install NPM Packages
+
+In this lab, you will learn how to minify your JavaScript, CSS, and HTML. To do this, we will use a few different Node based tools, uglify, htmltidy, and clean-css. In order to use these packages, we will first need to install them with NPM. Let's do that now. 
+
+Open a command prompt.
+
+Install the required npm packages.
+
+Use the command npm install -g uglify-js htmltidy clean-css to install all packages at once.
+
+Note: The command above is equivalent to these commands:
+
+```javascript
+    npm install -g uglify-js
+    npm install -g htmltidy
+    npm install -g clean-css
+ ```
+
+Now that you have the tools installed, in the next sections we will use each of them to minify our CSS, HTML, and JavaScript.
+
+
+
