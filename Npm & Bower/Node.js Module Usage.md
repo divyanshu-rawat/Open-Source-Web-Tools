@@ -2,9 +2,14 @@
 
 #### Installing Node.js Modules and Dependencies
 
-In order to use npm, you need to initialize a package.json file, which tells npm what modules you are using. This enables you to give your app to other developers without the node_modules folder and allows them to install npm dependencies by running npm install.
+In order to use npm, you need to initialize a package.json file, which tells npm what modules you are using.
 
-To begin, go to the root folder of your application, and type npm init. Here you will be asked questions about the details of your Node.js application. When you are done, you will have a file labeled package.json that looks similar to this:
+This enables you to give your app to other developers without the node_modules folder and allows them to install npm dependencies by running npm install.
+
+To begin, go to the root folder of your application, and type npm init.
+
+Here you will be asked questions about the details of your Node.js application. When you are done, you will have a file labeled package.json that looks similar to this:
+
 ```javascript
   {
   "name": "npm-modules",
@@ -19,7 +24,17 @@ To begin, go to the root folder of your application, and type npm init. Here you
 }
 ```
 
-Once this is complete, you can add modules by typing npm install module-name. For example, if you want to install Express, you'd type npm install express --save. This will cause Express to install itself with each of its dependencies. As with your app, Express also has a package.json that lists the modules it requires. Each of Express' dependencies also has a package.json file with its dependencies. This cascades down until every module's dependencies are met.
+Once this is complete, you can add modules by typing npm install module-name.
+
+For example, if you want to install Express, you'd type npm install express --save.
+
+This will cause Express to install itself with each of its dependencies.
+
+As with your app, Express also has a package.json that lists the modules it requires.
+
+Each of Express' dependencies also has a package.json file with its dependencies.
+
+This cascades down until every module's dependencies are met.
 
 If you open your package.json file, you'll see a new block called dependencies. Within this block, you'll see Express listed.
 
@@ -40,7 +55,9 @@ If you open your package.json file, you'll see a new block called dependencies. 
 }
 ```
 
-Navigate to the node_packages folder and you'll see an Express folder. Within that folder, you'll find the package.json file for Express. If you open it, you'll see all the dependencies of Express.
+Navigate to the node_packages folder and you'll see an Express folder.
+
+Within that folder, you'll find the package.json file for Express. If you open it, you'll see all the dependencies of Express.
 
 ```javascript
 
@@ -76,11 +93,17 @@ javascript "dependencies":
 
 ```
 
-The Express folder has its own node_modules folder that contains each of those dependencies. How do you keep track of all these dependencies with your version control? The beauty of npm and package.json is that you can exclude the node_modules folder in your app from version control. When other developers obtain your code, all they have to do is run npm install. All the dependencies of your app are installed and they're ready to go!
+The Express folder has its own node_modules folder that contains each of those dependencies.
+
+How do you keep track of all these dependencies with your version control? The beauty of npm and package.json is that you can exclude the node_modules folder in your app from version control.
+
+When other developers obtain your code, all they have to do is run npm install. All the dependencies of your app are installed and they're ready to go!
 
 If you want to use Bluebird for promises in your Express app, type npm install bluebird --save. Your package.json file now looks something like this:
 
-javascript "dependencies": { "bluebird": "^3.4.1", "express": "^4.14.0" } If you want to use a module like Gulp that helps with development, but is not to be deployed as part of your build, you'd type npm install gulp --save-dev. Now you have another block in your package.json file that is called devDependencies. This is how you would add development tools like Karma to your app.
+If you want to use a module like Gulp that helps with development, but is not to be deployed as part of your build, you'd type npm install gulp --save-dev.
+
+Now you have another block in your package.json file that is called devDependencies. This is how you would add development tools like Karma to your app.
 
 ```javascript
  "dependencies": {
@@ -94,11 +117,19 @@ javascript "dependencies": { "bluebird": "^3.4.1", "express": "^4.14.0" } If you
 
 #### Module Dependencies and Semantic Versioning
 
-The Node.js module world is fast moving and new module versions are constantly being developed and released. For many modules to evolve functionally, this means that there could be breaking changes from one version to the next that could be crippling to a large code base. Because of this, Node.js module developers are urged to use the Semantic Versioning System (SemVer). This states that Node.js modules should use a version with three parts, X.Y.Z. Each of these letters represents a number with:
+The Node.js module world is fast moving and new module versions are constantly being developed and released.
+
+For many modules to evolve functionally, this means that there could be breaking changes from one version to the next that could be crippling to a large code base.
+
+Because of this, Node.js module developers are urged to use the Semantic Versioning System (SemVer).
+
+This states that Node.js modules should use a version with three parts, X.Y.Z. Each of these letters represents a number with:
 
 X being a major version
 Y being a minor version
 Z being a patch version
+
+
 For example, 1.2.34 would represent version 1.2 patch 34.
 
 An increment of major version (X) will contain any backward incompatible changes to the API.
