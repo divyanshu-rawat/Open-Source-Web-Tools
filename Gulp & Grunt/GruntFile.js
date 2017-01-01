@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
+        
         uglify: {
             options: {},
             build: {
@@ -13,20 +14,27 @@ module.exports = function(grunt) {
 
          
          jshint: {
-         files: ['Gruntfile.js', 'src/**/*.js'],
+         files: ['Gruntfile.js', 'lintTest.js'],
          options: {
          globals: {
           jQuery: true
         }
       }
     }
+    ,
+
+     watch: {
+        files: ['lintTest.js'],
+        tasks: ['uglify', 'jshint']
+    }
   
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch')
 
-  grunt.registerTask('default', ['uglify','jshint']);
+  grunt.registerTask('default', ['uglify','jshint','watch']);
 
 };
 
