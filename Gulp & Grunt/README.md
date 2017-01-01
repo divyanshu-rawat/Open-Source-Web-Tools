@@ -134,5 +134,5 @@ Once all of this is completed uglify will run with the grunt command.
 
 #### For more info about Grunt, check the following links out:
 
-* Configuring Tasks
-* Creating Tasks
+*  [Configuring Tasks] (http://gruntjs.com/configuring-tasks)
+*  [Creating Tasks]    (http://gruntjs.com/creating-tasks)
