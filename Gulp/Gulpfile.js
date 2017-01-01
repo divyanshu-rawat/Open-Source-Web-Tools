@@ -17,3 +17,5 @@ gulp.task('watch', function() {
 });
 
 // gulp.task('default', ['jshint', 'sass', 'uglify', 'watch']);
+
+ // (e.g. linting, followed by testing, followed by compilation, followed by minification) 
