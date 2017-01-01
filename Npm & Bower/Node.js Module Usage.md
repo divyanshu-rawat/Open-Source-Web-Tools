@@ -133,8 +133,11 @@ Z being a patch version
 For example, 1.2.34 would represent version 1.2 patch 34.
 
 An increment of major version (X) will contain any backward incompatible changes to the API.
+
 An increment of minor version (Y) will contain backward compatible changes to the private code and any API functionality that has become deprecated.
+
 An increment of patch (Z) must be backward compatible bug fixes.
+
 For more information, visit the SemVer website.
 
 Look at the dependencies section of your package.json file.
@@ -154,16 +157,22 @@ Look at the dependencies section of your package.json file.
 When you use npm install some-module, npm installs the latest version of the module, and adds it to package.json with the caret ^ notation:
 
 "express": "^4.14.0"
-If the major (X) and minor (Y) versions are included, then the caret indicates that only patch versions will be loaded. If there is no minor version indicated, then both patch and minor versions will be loaded, like so:
+If the major (X) and minor (Y) versions are included, then the caret indicates that only patch versions will be loaded.
+
+If there is no minor version indicated, then both patch and minor versions will be loaded, like so:
 
 "express": "^4"
 As a best practice, update only patch versions; the notation that Express uses when using npm install module-name is recommended unless there are special requirements.
 
-There are many ways to indicate module versions in package.json utilizing notations such as x, >, >=, ~, and =, among others. For more information, see the AngularJS SemVer documentation.
+There are many ways to indicate module versions in package.json utilizing notations such as x, >, >=, ~, and =, among others.
+
+For more information, see the AngularJS SemVer documentation.
 
 #### Loading Node.js Modules Into a Node.js App
 
-To use Express in a Node.js app, you would first need to create a Javascript file for the app. Since Express can be used to create an HTTP server, it could be called server.js. To load the Express Node.js module, you use the Node.js require() method.
+To use Express in a Node.js app, you would first need to create a Javascript file for the app. Since Express can be used to create an HTTP server, it could be called server.js.
+
+To load the Express Node.js module, you use the Node.js require() method.
 
 ```javascript
 
