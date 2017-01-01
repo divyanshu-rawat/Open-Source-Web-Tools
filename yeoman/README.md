@@ -1,21 +1,19 @@
-# yeoman
+#### yeoman
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.15.1.
 
-## Build & development
+#### Build & development
 
 Run `grunt` for building and `grunt serve` for preview.
 
-## Testing
+#### Testing
 
 Running `grunt test` will run the unit tests with karma.
 
 
 
-#### Description Yeoman
-
-Introduction to Using Yeoman
+#### Introduction to Using Yeoman
 
 Yeoman [http://yeoman.io] utilizes a set of tools for automating development workflow and generates projects in any language. Yeoman employs a modular architecture with customizable scale to help you quickly and easily create new modules, packages, or projects; bootstrap new services; and promote new projects by providing sample apps to other developers. In addition, Yeoman suggests best practices, and offers tools such as style guides that help you streamline the maintenance of your new and existing web app projects.
 
