@@ -2,21 +2,33 @@
 
 #### Bower is a tool powered by Node.js that allows you to manage the packages you are using within an application.
 
-Bower is similar to npm, with the exception that it is designed exclusively for web packages such as jQuery, Bootstrap, and Font Awesome. Bower is used to handle client/browser dependencies, while npm is used for dev/server dependencies. In addition, Bower keeps track of all the dependencies for your application in one file, bower.json, that is stored within your application.
+Bower is similar to npm, with the exception that it is designed exclusively for web packages such as jQuery, Bootstrap, and Font Awesome.
+
+Bower is used to handle client/browser dependencies, while npm is used for dev/server dependencies.
+
+In addition, Bower keeps track of all the dependencies for your application in one file, bower.json, that is stored within your application.
 
 All of this functionality gives you the ability to:
 
 Install dependencies with one command, either one at a time, or all at once after you've set up your dependencies in bower.json
+
 Update all dependencies with one command, either individually or combined
+
 Uninstall dependencies easily
+
 Define specific packages for development and production environments
+
 Bower is optimized for the front end. If multiple packages depend on a package, such as jQuery, Bower will download jQuery just once. This is known as a flat dependency graph and it helps reduce page load.
 
 With Bower, you can easily import all the libraries and packages you need for your front end, as well as maintain your development and production library ecosystems without having to find, download, and store individual scripts.
 
-Bower can manage components that contain HTML, CSS, JavaScript, fonts, or even image files. Bower doesn’t concatenate or minify code, or do anything else; it simply installs the right versions of the packages and their dependencies that you need.
+Bower can manage components that contain HTML, CSS, JavaScript, fonts, or even image files.
 
-If you are producing reusable components for the web, you can also package your own application and save it without the dependencies. Further, the user of your component can install all the dependencies to make your module run with a single command. This can make your package size smaller in your repository, while still maintaining the same functionality.
+Bower doesn’t concatenate or minify code, or do anything else; it simply installs the right versions of the packages and their dependencies that you need.
+
+If you are producing reusable components for the web, you can also package your own application and save it without the dependencies.
+
+Further, the user of your component can install all the dependencies to make your module run with a single command. This can make your package size smaller in your repository, while still maintaining the same functionality.
 
 
 #### Installing Bower
@@ -54,7 +66,7 @@ This will create a bower.json file that looks something like this:
   ]
 }
 
-````
+```
 
 #### Using Bower
 
@@ -78,7 +90,9 @@ Looking at the bower.json file, you'll see a new dependencies section.
 
 You'll notice that Bower uses the same caret notation as Node.js.
 
-You can use the Bower search page to see a list of popular packages and also search for packages. For data formatting, you can install moment with bower install moment --save. For helpful JavaScript utilities, you can install lodash with bower install lodash --save.
+You can use the Bower search page to see a list of popular packages and also search for packages.
+
+For data formatting, you can install moment with bower install moment --save. For helpful JavaScript utilities, you can install lodash with bower install lodash --save.
 
 The bower.json file now looks like this:
 
