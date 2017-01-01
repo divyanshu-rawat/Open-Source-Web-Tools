@@ -1,0 +1,1 @@
+function init(){recordCount=3,2==recordCount?console.log("we have two"):console.log("not two")}init();
